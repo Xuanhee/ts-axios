@@ -1,6 +1,6 @@
 {
   "name": "good-axios",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "",
   "keywords": [],
   "main": "dist/axios.umd.js",
