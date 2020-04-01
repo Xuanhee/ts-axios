@@ -8,9 +8,9 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
   echo "Releasing $VERSION ..."
 
-  # commit
+  # commit 
+  git config core.autocrlf false
   git add -A
-  git config --global core.autocrlf false
   git commit -m "[build] $VERSION"
   npm version $VERSION --message "[release] $VERSION"
   git push origin master
