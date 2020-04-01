@@ -22,7 +22,7 @@
     "dev": "node examples/server.js",
     "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
     "prebuild": "rimraf dist",
-    "build": "tsc --module commonjs && rollup -c rollup.config.ts && typedoc --out docs --target es6 --theme minimal --mode file src",
+    "build": "tsc --module commonjs && rollup -c rollup.config.ts",
     "start": "rollup -c rollup.config.ts -w",
     "test": "jest --coverage",
     "test:watch": "jest --coverage --watch",
@@ -140,8 +140,5 @@
     "webpack": "^4.42.0",
     "webpack-dev-middleware": "^3.7.2",
     "webpack-hot-middleware": "^2.25.0"
-  },
-  "dependencies": {
-    "@types/mocha": "^7.0.2"
   }
 }
